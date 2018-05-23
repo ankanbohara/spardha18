@@ -2402,6 +2402,7 @@ html.no-csstransitions .home-content__main {
 
 .services-list .service-text {
     margin-left: 7.8rem;
+    text-align: justify;
 }
 
 .services-list .service-icon {
@@ -2759,7 +2760,7 @@ html.no-csstransitions .home-content__main {
     transition: opacity 0.5s ease-in-out;
 }
 
-/*.clients__slide:hover*/, .clients__slide:focus {
+.clients__slide:focus {
     opacity: 1;
 }
 
@@ -3006,8 +3007,8 @@ html.no-csstransitions .home-content__main {
     max-width: 1000px;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.4);
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-family: "montserrat-light", sans-serif;
     font-size: 1.5rem;
     line-height: 2;
@@ -3020,7 +3021,7 @@ html.no-csstransitions .home-content__main {
     color: #FFFFFF;
 }
 
-.contact-content h5 {
+.contact-content h6 {
     margin-top: 0;
     color: #39b54a;
 }
@@ -3085,14 +3086,7 @@ html.no-csstransitions .home-content__main {
 .contact-content textarea.placeholder {
     color: #4f4f4f !important;
 }
-.contact-primary, .contact-secondary {
-    float: left;
-    padding: 0 5rem;
-}
 
-.contact-primary {
-    width: 65%;
-}
 
 .contact-primary #contactForm {
     margin-top: -1.5rem;
@@ -3113,12 +3107,12 @@ html.no-csstransitions .home-content__main {
     /*background-color: #121212;*/
 }
 
-.contact-secondary .contact-info {
+.contact-info {
     position: relative;
 }
 
-.contact-secondary .cinfo {
-    margin-bottom: 4.8rem;
+.cinfo {
+    margin-bottom: 5rem;
 }
 
 .contact-social {
@@ -3138,10 +3132,21 @@ html.no-csstransitions .home-content__main {
     color: white;
 }
 
-.contact-social li a:hover, 
-.contact-social li a:focus {
-    color: #39b54a;
+.contact-social a.fb:hover, 
+.contact-social a.fb:focus {
+    color: #3B5998;
 }
+
+.contact-social a.lin:hover, 
+.contact-social a.lin:focus {
+    color: #a4c639;
+}
+
+.contact-social a.inst:hover, 
+.contact-social a.inst:focus {
+    color: #cb2027;
+}
+
 
 .contact-social li:last-child {
     margin: 0;
@@ -3305,7 +3310,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .s-contact {
-        padding-top: 12rem;
+        padding-top: 2rem;
         padding-bottom: 0;
     }
     .contact__line {
@@ -3313,7 +3318,7 @@ html.no-csstransitions .home-content__main {
         top: -7.2rem;
     }
     .contact-content {
-        padding-bottom: 12rem;
+        padding-bottom: 2rem;
         text-align: center;
     }
     .contact-primary, .contact-secondary {
@@ -3602,5 +3607,8 @@ footer .row {
     }
 }
 
+.contact-label{
+    margin-right: 1em;
+}
 
 /*# sourceMappingURL=main.css.map */
