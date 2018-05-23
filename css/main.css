@@ -37,11 +37,11 @@
  *      ## home animations
  *  # about
  *      ## about stats
- *  # services
- *      ## services list
+ *  # aboutus
+ *      ## aboutus list
  *  # works
  *      ## bricks/masonry
- *  # clients
+ *  # sponsors
  *      ## slider
  *      ## testimonials
  *  # contact
@@ -1351,7 +1351,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width: 800px) {
-    .s-clients {
+    .s-sponsors {
         padding-bottom: 17.4rem;
     }
     .section-header.has-bottom-sep::before {
@@ -2365,10 +2365,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # services
+ * # aboutus
  *
  * ------------------------------------------------------------------- */
-.s-services {
+.s-aboutus {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
     background-color: #e6e6e6;
@@ -2378,34 +2378,41 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## services list
+ * ## aboutus list
  * ------------------------------------------------------------------- */
-.services-list {
+.aboutus-list {
     margin-top: 6rem;
 }
 
-.services-list .service-item {
+.aboutus-list .service-item {
     margin-bottom: .9rem;
 }
 
-.services-list .service-item h3 {
+.aboutus-list .service-item h3 {
     margin-top: 0;
 }
 
-.services-list .service-item:nth-child(2n+1) {
+.aboutus-list .service-item:nth-child(2n+1) {
     padding-right: 50px;
 }
 
-.services-list .service-item:nth-child(2n+2) {
+.aboutus-list .service-item:nth-child(2n+2) {
     padding-left: 50px;
 }
 
-.services-list .service-text {
-    margin-left: 7.8rem;
+.aboutus-list .service-text{
+    margin-left: 7rem;
+}
+
+.aboutus-list .service-text p{
+    text-align: justify;
+}
+.aboutus-list .service-text p{
     text-align: justify;
 }
 
-.services-list .service-icon {
+
+.aboutus-list .service-icon {
     float: left;
     color: #39b54a;
     font-size: 4.8rem;
@@ -2415,49 +2422,49 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * services
+ * aboutus
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .services-list {
+    .aboutus-list {
         max-width: 1000px;
     }
-    .services-list .service-item:nth-child(2n+1) {
+    .aboutus-list .service-item:nth-child(2n+1) {
         padding-right: 30px;
     }
-    .services-list .service-item:nth-child(2n+2) {
+    .aboutus-list .service-item:nth-child(2n+2) {
         padding-left: 30px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .services-list h3 {
+    .aboutus-list h3 {
         font-size: 2.5rem;
     }
-    .services-list .service-item:nth-child(2n+1) {
+    .aboutus-list .service-item:nth-child(2n+1) {
         padding-right: 20px;
     }
-    .services-list .service-item:nth-child(2n+2) {
+    .aboutus-list .service-item:nth-child(2n+2) {
         padding-left: 20px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .services-list {
+    .aboutus-list {
         margin-top: 4.2rem;
         max-width: 500px;
         text-align: center;
     }
-    .services-list .service-item:nth-child(n) {
+    .aboutus-list .service-item:nth-child(n) {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .services-list h3 {
+    .aboutus-list h3 {
         font-size: 3rem;
     }
-    .services-list .service-text {
+    .aboutus-list .service-text {
         margin-left: 0;
     }
-    .services-list .service-icon {
+    .aboutus-list .service-icon {
         font-size: 4.5rem;
         float: none;
         margin-top: 0;
@@ -2465,24 +2472,24 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
-    .s-services {
+    .s-aboutus {
         padding-top: 12rem;
     }
-    .services-list .service-item:nth-child(n) {
+    .aboutus-list .service-item:nth-child(n) {
         padding-right: 10px;
         padding-left: 10px;
     }
-    .services-list h3 {
+    .aboutus-list h3 {
         font-size: 2.5rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .services-list .service-item:nth-child(n) {
+    .aboutus-list .service-item:nth-child(n) {
         padding-right: 0;
         padding-left: 0;
     }
-    .services-list h3 {
+    .aboutus-list h3 {
         font-size: 2.5rem;
     }
 }
@@ -2728,13 +2735,13 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # clients
+ * # sponsors
  *
  * ------------------------------------------------------------------- */
-.s-clients {
+.s-sponsors {
     padding-top: 16.2rem;
     padding-bottom: 16.8rem;
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     color: #757575;
     position: relative;
 }
@@ -2743,14 +2750,14 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## slider
  * ------------------------------------------------------------------- */
-.clients-outer {
+.sponsors-outer {
     margin-top: 3.6rem;
     padding-bottom: 9rem;
     text-align: center;
     position: relative;
 }
 
-.clients__slide {
+.sponsors__slide {
     display: block;
     /*opacity: .55;*/
     height: 20rem;
@@ -2760,7 +2767,7 @@ html.no-csstransitions .home-content__main {
     transition: opacity 0.5s ease-in-out;
 }
 
-.clients__slide:focus {
+.sponsors__slide:focus {
     opacity: 1;
 }
 
@@ -2768,14 +2775,14 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## testimonials
  * ------------------------------------------------------------------- */
-.clients-testimonials {
+.sponsors-testimonials {
     margin-top: 4.2rem;
     padding-top: 7.2rem;
     text-align: center;
     position: relative;
 }
 
-.clients-testimonials::before {
+.sponsors-testimonials::before {
     content: "";
     display: block;
     height: 1px;
@@ -2790,11 +2797,11 @@ html.no-csstransitions .home-content__main {
     transform: translateX(-50%);
 }
 
-.clients-testimonials .testimonials {
+.sponsors-testimonials .testimonials {
     margin: 0 10%;
 }
 
-.clients-testimonials .testimonials p {
+.sponsors-testimonials .testimonials p {
     font-family: "lora-regular", serif;
     font-size: 3rem;
     line-height: 1.8;
@@ -2802,33 +2809,33 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 6rem;
 }
 
-.clients-testimonials .testimonials__slide {
+.sponsors-testimonials .testimonials__slide {
     padding: 0 0 3rem 0;
 }
 
-.clients-testimonials .testimonials__avatar {
+.sponsors-testimonials .testimonials__avatar {
     height: 8.4rem;
     width: 8.4rem;
     border-radius: 50%;
     margin: 0 auto 1.2rem auto;
 }
 
-.clients-testimonials .testimonials__name, 
-.clients-testimonials .testimonials__pos {
+.sponsors-testimonials .testimonials__name, 
+.sponsors-testimonials .testimonials__pos {
     display: block;
 }
 
-.clients-testimonials .testimonials__name {
+.sponsors-testimonials .testimonials__name {
     font-family: "montserrat-semibold", sans-serif;
     color: #000000;
 }
 
-.clients-testimonials .testimonials__pos {
+.sponsors-testimonials .testimonials__pos {
     font-family: "montserrat-light", sans-serif;
     font-size: 1.4rem;
 }
 
-.clients-testimonials .testimonials .slick-arrow {
+.sponsors-testimonials .testimonials .slick-arrow {
     position: absolute;
     top: 7.2rem;
     width: 66px;
@@ -2849,82 +2856,82 @@ html.no-csstransitions .home-content__main {
     z-index: 2;
 }
 
-.clients-testimonials .testimonials .slick-prev {
+.sponsors-testimonials .testimonials .slick-prev {
     left: -130px;
     background-image: url("../images/left-arrow.png");
 }
 
-.clients-testimonials .testimonials .slick-next {
+.sponsors-testimonials .testimonials .slick-next {
     right: -130px;
     background-image: url("../images/right-arrow.png");
 }
 
-.clients-testimonials .testimonials .slick-dots {
+.sponsors-testimonials .testimonials .slick-dots {
     margin-top: -0.6px;
 }
 
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * clients
+ * sponsors
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .clients-testimonials .testimonials {
+    .sponsors-testimonials .testimonials {
         margin: 0 12%;
     }
-    .clients-testimonials .testimonials p {
+    .sponsors-testimonials .testimonials p {
         font-size: 2.6rem;
     }
-    .clients-testimonials .testimonials .slick-prev {
+    .sponsors-testimonials .testimonials .slick-prev {
         left: -100px;
     }
-    .clients-testimonials .testimonials .slick-next {
+    .sponsors-testimonials .testimonials .slick-next {
         right: -100px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .clients-testimonials .testimonials p {
+    .sponsors-testimonials .testimonials p {
         font-size: 2.2rem;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .clients-testimonials::before {
+    .sponsors-testimonials::before {
         width: 400px;
     }
-    .clients-testimonials .testimonials {
+    .sponsors-testimonials .testimonials {
         margin: 0 2rem;
     }
-    .clients-testimonials .testimonials .slick-arrow {
+    .sponsors-testimonials .testimonials .slick-arrow {
         top: auto;
         bottom: 3rem;
     }
-    .clients-testimonials .testimonials .slick-prev {
+    .sponsors-testimonials .testimonials .slick-prev {
         left: 0;
     }
-    .clients-testimonials .testimonials .slick-next {
+    .sponsors-testimonials .testimonials .slick-next {
         right: 0;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .s-clients {
+    .s-sponsors {
         padding-top: 12rem;
     }
-    .clients-testimonials::before {
+    .sponsors-testimonials::before {
         width: 250px;
     }
-    .clients-testimonials .testimonials {
+    .sponsors-testimonials .testimonials {
         margin: 0;
     }
-    .clients-testimonials .testimonials p {
+    .sponsors-testimonials .testimonials p {
         font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .clients-testimonials .testimonials p {
+    .sponsors-testimonials .testimonials p {
         font-size: 1.9rem;
     }
 }
