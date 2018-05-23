@@ -2402,6 +2402,7 @@ html.no-csstransitions .home-content__main {
 
 .services-list .service-text {
     margin-left: 7.8rem;
+    text-align: justify;
 }
 
 .services-list .service-icon {
