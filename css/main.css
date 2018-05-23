@@ -3131,6 +3131,21 @@ html.no-csstransitions .home-content__main {
     color: white;
 }
 
+.contact-social a.fb:hover, 
+.contact-social a.fb:focus {
+    color: #3B5998;
+}
+
+.contact-social a.lin:hover, 
+.contact-social a.lin:focus {
+    color: #a4c639;
+}
+
+.contact-social a.inst:hover, 
+.contact-social a.inst:focus {
+    color: #cb2027;
+}
+
 
 .contact-social li:last-child {
     margin: 0;
@@ -3594,21 +3609,5 @@ footer .row {
 .contact-label{
     margin-right: 1em;
 }
-
-.contact-social a.fb:hover, 
-.contact-social a.fb:focus {
-    color: #3B5998;
-}
-
-.contact-social a.lin:hover, 
-.contact-social a.lin:focus {
-    color: #a4c639;
-}
-
-.contact-social a.inst:hover, 
-.contact-social a.inst:focus {
-    color: #cb2027;
-}
-
 
 /*# sourceMappingURL=main.css.map */
