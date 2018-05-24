@@ -1559,12 +1559,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav__social li a {
-    color: rgba(255, 255, 255, 0.15);
+    color: #ffffffaa;
 }
 
-.header-nav__social li a:hover,
-.header-nav__social li a:focus {
-    color: white;
+.header-nav__list li a:hover,
+.header-nav__list li a:focus {
+    color: #ffee00;
 }
 
 .header-nav__social li:last-child {
@@ -1665,7 +1665,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-menu-toggle:hover, .header-menu-toggle:focus {
-    color: #FFFFFF;
+    color: #ffee00;
 }
 
 .header-menu-text {
@@ -1680,16 +1680,23 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header-menu-icon {
     display: block;
     width: 22px;
-    height: 2px;
+    height: 3px;
     margin-top: -1px;
     position: absolute;
     left: 10px;
     top: 50%;
     right: auto;
     bottom: auto;
-    background-color: white;
+    background-color: #39b54a;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+}
+
+.header-menu-toggle:hover .header-menu-icon,
+.header-menu-toggle:focus .header-menu-icon{
+    background-color: #ffee00;
+    transition: all 0.5s ease-in-out;
+    
 }
 
 .header-menu-icon::before, .header-menu-icon::after {
@@ -1792,8 +1799,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content h3 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 1.6rem;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+    color: rgb(255, 238, 0);
     text-transform: uppercase;
     letter-spacing: .3rem;
     position: relative;
@@ -1939,7 +1946,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 33px;
     height: 33px;
     line-height: calc(33px - 4px);
-    border: 2px solid #FFFFFF;
+    border-width: 2p;
+    border-style: solid;
     border-radius: 50%;
 }
 
@@ -2107,7 +2115,7 @@ html.no-csstransitions .home-content__main {
     }
     .home-content__buttons .btn {
         display: block;
-        width: 70%;
+        width: auto;
         margin: 1.5rem 0 0 0;
     }
     .home-social {
@@ -2240,7 +2248,7 @@ html.no-csstransitions .home-content__main {
 
 .stats__count {
     font-family: "montserrat-bold", sans-serif;
-    font-size: 8.4rem;
+    font-size: 6rem;
     line-height: 1;
     color: #FFFFFF;
     position: relative;
@@ -2302,7 +2310,7 @@ html.no-csstransitions .home-content__main {
         max-width: 600px;
     }
     .stats__count {
-        font-size: 8rem;
+        font-size: 6rem;
     }
     .stats h5 {
         margin-top: 1.2rem;
@@ -2353,12 +2361,12 @@ html.no-csstransitions .home-content__main {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .about-desc {
         font-size: 1.8rem;
     }
     .stats__count {
-        font-size: 7.8rem;
+        font-size: 6rem;
     }
 }
 
@@ -2760,11 +2768,19 @@ html.no-csstransitions .home-content__main {
 .sponsors__slide {
     display: block;
     /*opacity: .55;*/
-    height: 20rem;
+    height: 18rem;
     width :20rem;
     padding: 1.5rem 2.8rem;
     -webkit-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
+    position: relative;
+}
+
+.sponsors__slide img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90%;
 }
 
 .sponsors__slide:focus {
@@ -2943,10 +2959,11 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-    /*background-color: #151515;*/
-    /*background-image: url("../images/contact-bg.jpg");*/
+    background-color: #151515;
+    background-image: url("../images/contact.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
+    background-size: auto 100%;
     padding-top: 15rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
@@ -3139,18 +3156,19 @@ html.no-csstransitions .home-content__main {
     color: white;
 }
 
-.contact-social a.fb:hover, 
-.contact-social a.fb:focus {
+
+a.fb:hover, 
+a.fb:focus {
     color: #3B5998;
 }
 
-.contact-social a.lin:hover, 
-.contact-social a.lin:focus {
+a.lin:hover, 
+a.lin:focus {
     color: #a4c639;
 }
 
-.contact-social a.inst:hover, 
-.contact-social a.inst:focus {
+a.inst:hover, 
+a.inst:focus {
     color: #cb2027;
 }
 
@@ -3317,8 +3335,8 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .s-contact {
-        padding-top: 2rem;
-        padding-bottom: 0;
+        padding-top: 8rem;
+        padding-bottom: 2rem;
     }
     .contact__line {
         height: 14.4rem;
